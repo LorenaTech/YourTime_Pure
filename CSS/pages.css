@@ -1,28 +1,22 @@
 @import url(global.css);
 
-.title {
+.logo{
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: var(--card-bg);
-    margin-top: 20px;
-    gap: 1em;
-
-    height: 100px;
+    height: 100%;
 }
 
-.logoImgPage {
-    width: 60px;
+.logoImg{
+    margin: 5px;
+    width: 30px;
     background-color: whitesmoke;
     border-radius: 50%;
-    padding: 5px;
 }
-
-.titleTextPage{
-    font-size: 3em;
+.logoText{
+    font-size: 20px;
+    color: #fff;
 }
-
-.search {
+.search{
     display: flex;
     align-items: center;
     background-color: var(--body-bg);
@@ -31,18 +25,23 @@
     border-radius: 36px;
 }
 
-input {
-    width: 90%;
+input{
+    width:90%;
     background-color: transparent;
     border: none;
 }
 
-.lupa {
+.lupa{
     margin: 5px;
     width: 20px;
 }
 
-nav {
+
+main{
+    display: flex;
+}
+
+nav{
     height: 100vh;
     width: 80px;
     background-color: var(--navigation);
@@ -51,8 +50,29 @@ nav {
     justify-content: center;
     gap: 10px;
 }
+.home{
+    margin: 5px;
+    width: 20px;
+}
+.menu{
+    margin: 5px;
+    width: 20px;
+}
 
-.title {
+.btn-home{
+    background-color: var(--button);
+    border-radius: 4px;
+    width: 80%;
+}
+
+.btn-menu{
+    background-color: var(--button);
+    border-radius: 4px;
+    width: 80%;
+}
+
+
+.title{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,24 +81,24 @@ nav {
     margin-bottom: 20px;
 }
 
-.titleText {
+.titleText{
     font-size: 3em;
 }
 
-.content {
+.content{
     display: flex;
     justify-content: space-around;
-    height: 80%;
+    height: 90%;
 }
 
-.tasks {
+.tasks{
     background-color: var(--section-bg);
-    margin: 1.2 rem;
+    margin: 2rem;
     height: min-content;
     border-radius: 5px;
 }
 
-.task {
+.task{
     background-color: var(--card-bg);
     margin: 1rem;
     padding: 0.8rem;
@@ -86,15 +106,15 @@ nav {
     border-radius: 5px;
 }
 
-.task:hover {
+.task:hover{
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.selected {
+.selected{
     background-color: var(--taskSelected-bg);
 }
 
-.date {
+.date{
     background-color: var(--date-bg);
     width: max-content;
     display: flex;
@@ -105,21 +125,21 @@ nav {
     border-radius: 5px;
 }
 
-.dateText {
+.dateText{
     color: var(--card-bg);
 }
 
-aside {
+aside{
     width: 50%;
     display: flex;
     justify-content: end;
     border: var(--section-bg) solid 5px;
     border-radius: 5px;
-    margin: 10px -10px 5px 20px;
+    margin: 10px -20px 5px 20px;
     background-color: var(--card-bg);
-    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.3);;
 
-    p {
+    p{
         margin: 15px;
         font-size: 30px;
     }
