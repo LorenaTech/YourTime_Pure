@@ -1,0 +1,94 @@
+:root {
+    --body-bg: #0077C3;
+    --button-bg: #fff;
+    --section-bg: #E3E4E6;
+    --card-bg: #fff;
+    --date-bg: #EC9488;
+    --taskSelected-bg: #FFC1C1;
+    --navigation: #026AA7;
+    --button: #4E97C2;
+    --letter: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--letter);
+}
+
+body{
+    background-color: var(--body-bg);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: var(--navigation);
+    padding: 0 100px 0 100px;
+}
+
+.logoHeader{
+    display: flex;
+    align-items: center;
+    color: var(--button-bg);
+}
+
+.logoImgHeader{
+    margin: 5px;
+    margin-right: 10px;
+    width: 37px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+}
+
+.logoTextHeader{
+    font-size: 1.1em;
+}
+
+.btnsHeader {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    border-radius: 4px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    border-radius: 4px;
+    background-color: var(--button);
+    width: 37px;
+    height: 37px;
+    justify-content: center;
+    padding: 6px;
+}
+
+.btnsHome {
+    padding: 1px;
+}
+
+.btnsMenu {
+    padding: 4px;
+}
+
+.sandwich {
+    color: var(--button-bg);
+}
+
+main {
+    display: flex;
+}
+

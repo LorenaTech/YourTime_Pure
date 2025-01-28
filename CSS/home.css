@@ -1,0 +1,87 @@
+@import url(global.css);
+@import url(pages.css);
+
+
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--card-bg);
+    margin-top: 20px;
+    gap: 2em;
+}
+
+.logoHeader {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logoImgPage {
+    width: 30px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.logoTextHeader {
+    font-size: 20px;
+    color: #fff;
+    margin-left: 15px;
+}
+
+.logoImgPage {
+    width: 70px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.titleText {
+    font-size: 3em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.container {
+    display: grid;
+    margin: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 600;
+    background-color: var(--card-bg);
+    height: 10rem;
+    width: 10rem;
+    border-radius: 20%;
+}
+
+.create {
+
+    margin-top: 20px;
+}
+
+.card:hover {
+    background-color: var(--section-bg);
+    transform: scale(1.1);
+}
