@@ -42,7 +42,6 @@ header{
 
 .logoHeader{
     display: flex;
-    align-items: center;
     color: var(--button-bg);
 }
 
