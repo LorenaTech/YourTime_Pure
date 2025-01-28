@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="txt-nickname" placeholder="Nickname" />
+    <input type="text" id="txt-valor" placeholder="Valor" /> 
+    <button onclick="save()">Salvar</button>
+    <button onclick="load()">Carregar</button>
+
+    <div id="list" style="display: flex; flex-direction: column;"></div>
+
+    <script>
+        const save = function () {
+            let nickname = document.getElementById("txt-nickname").value.trim();
+            let valor = document.getElementById("txt-valor").value.trim();
+            if (!nickname || !valor) {
+                alert("Por favor, preencha todos os campos!");
+                return;
+            }
+            let data = localStorage.getItem(nickname);
+            let array = data ? data.split("|") : [];
+            array.push(valor);
+            localStorage.setItem(nickname, array.join("|"));
+            alert("Valor salvo com sucesso!");
+        };
+
+        const load = function() {
+            let nickname = document.getElementById("txt-nickname").value.trim();
+            const el = document.getElementById('list');
+            el.innerHTML = "";
+
+            let data = localStorage.getItem(nickname);
+            if (!data) {
+                alert("Nenhum dado encontrado para esse nickname!");
+                return;
+            }
+
+            let array = data.split("|");
+
+            array.forEach((valor) => {
+                let li = document.createElement("li");
+                li.style = "font-size: 28px; color: " + randomHexColorCode() + ";font-weight: bold; text-shadow: 0 1px 1px black;"
+                li.textContent = valor.toUpperCase();
+                el.appendChild(li);
+            });
+        };
+
+        const randomHexColorCode = () => {
+            let n = (Math.random() * 0xfffff * 1000000).toString(16);
+            return '#' + n.slice(0, 6);
+        };
+    </script>
+</body>
+</html>
