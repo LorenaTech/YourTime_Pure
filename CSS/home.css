@@ -10,7 +10,29 @@
     gap: 2em;
 }
 
+<<<<<<< HEAD
 .logoImg{
+=======
+.logoHeader {
+    display: flex;
+    height: 100%;
+}
+
+.logoImgPage {
+    width: 30px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.logoTextHeader {
+    font-size: 20px;
+    color: #fff;
+    margin-left: 15px;
+}
+
+.logoImgPage {
+>>>>>>> d4154b717d611b412e4082f3bad95425015039e3
     width: 70px;
     background-color: whitesmoke;
     border-radius: 50%;

@@ -35,3 +35,57 @@ header{
     padding: 0 100px 0 100px;
 }
 
+<<<<<<< HEAD
+=======
+.logoHeader{
+    display: flex;
+    color: var(--button-bg);
+}
+
+.logoImgHeader{
+    margin: 5px;
+    margin-right: 10px;
+    width: 37px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+}
+
+.logoTextHeader{
+    font-size: 1.1em;
+}
+
+.btnsHeader {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    border-radius: 4px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    border-radius: 4px;
+    background-color: var(--button);
+    width: 37px;
+    height: 37px;
+    justify-content: center;
+    padding: 6px;
+}
+
+.btnsHome {
+    padding: 1px;
+}
+
+.btnsMenu {
+    padding: 4px;
+}
+
+.sandwich {
+    color: var(--button-bg);
+}
+
+main {
+    display: flex;
+}
+
+>>>>>>> d4154b717d611b412e4082f3bad95425015039e3
