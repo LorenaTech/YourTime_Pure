@@ -72,7 +72,7 @@ nav {
 }
 
 .tasks {
-    background-color: var(--section-bg);
+    background-color: var(--navigation);
     margin: 1.2 rem;
     height: min-content;
     border-radius: 5px;
